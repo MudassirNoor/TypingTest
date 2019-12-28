@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Typing Speed Test</title>
+    <link rel = "stylesheet" href = "style.css">
+</head>
+<body>
+<header>
+    <h1>Typing Speed Test</h1>
+    <p>The purpose of this project is to make a type test program that can
+       determine the accuracy, words per minute count, and misspelled words
+       count</p>
+</header>
+<main>
+    <section class = "testSection">
+        <h2>Original Text</h2>
+            <p id ="originalText">A relational database is a set of formally described tables from which data can be accessed or reassembled in many different ways without having to reorganize the database tables. The standard user and application programming interface (API) of a relational database is the Structured Query Language (SQL).</p>
+        <label>
+            <textarea placeholder = "Once you start typing here, the timer will start."></textarea>
+        </label>
+    </section>
+    <section class = "analysis">
+        <h3>Misspelled Word Count</h3>
+        <div id = "misspelledWordCount">00</div>
+        <h3>Words Per Minute</h3>
+        <div id = "wpm">00</div>
+    </section>
+    <section class = "Timer">
+        <div id = "clock">00:00</div>
+        <button id = "reset">Reset</button>
+    </section>
+</main>
+</body>
+<script src = "script.js"></script>
+</html>

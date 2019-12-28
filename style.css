@@ -1,0 +1,25 @@
+textarea {
+    border: 3px solid #888;
+    width: 600px;
+    height: 120px;
+    padding: 5px;
+    background: beige;
+}
+
+h3 {
+    font-size: 1em;
+}
+
+button {
+    color: white;
+    background: blue;
+    cursor: pointer;
+}
+
+#originalText {
+    border: 3px solid black;
+    background: lightgray;
+    width: 600px;
+    height: 120px;
+    padding: 5px;
+}
