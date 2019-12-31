@@ -1,5 +1,5 @@
 textarea {
-    border: 3px solid #888;
+    border: 3px solid   ;
     width: 600px;
     height: 120px;
     padding: 5px;
@@ -22,4 +22,23 @@ button {
     width: 600px;
     height: 120px;
     padding: 5px;
+}
+
+.summary {
+    display: none
+}
+
+#closeSummary {
+    background: lightgray;
+    color: red;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#closeSummary:hover,
+#closeSummary:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
 }
