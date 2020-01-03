@@ -1,31 +1,89 @@
-textarea {
-    border: 3px solid   ;
+* {
+    padding: 5px 5px;
+}
+body {
+    background: antiquewhite;
+}
+
+header {
+    background: aquamarine;
+    text-align: center;
+}
+
+main {
+    background-color: aliceblue;
+}
+
+.textSection, .analysis {
+    float: left
+}
+
+.testArea:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#originalText {
+    border: 2px solid black;
+    background: lightgray;
     width: 600px;
     height: 120px;
-    padding: 5px;
+}
+
+textarea {
+    border: 2px solid;
     background: beige;
+    width: 600px;
+    height: 120px;
+}
+
+.analysis {
+    align-content: center;
+}
+
+#wrapper {
+    position: absolute;
+    top: 60%;
+}
+
+#wpm, #misspelledWordCount, .Timer{
+    margin: 1px;
+    border-width: 2px;
+    text-align: center;
+}
+
+#wpm, #misspelledWordCount {
+    border: 2px midnightblue;
+}
+
+h1, h3 {
+    text-align: center;
 }
 
 h3 {
+    padding: 1px;
+    margin: 1px;
     font-size: 1em;
 }
 
 button {
     color: white;
-    background: blue;
+    background: darkslateblue;
     cursor: pointer;
-}
-
-#originalText {
-    border: 3px solid black;
-    background: lightgray;
-    width: 600px;
-    height: 120px;
-    padding: 5px;
+    padding: 8px 8px;
+    border: none;
+    text-align: center;
 }
 
 .summary {
-    display: none
+    position: fixed;
+    right: 30%;
+    bottom: 45%;
+    display: none;
+    background-color: lawngreen;
+    width: 250px;
+    height: 100px;
 }
 
 #closeSummary {
@@ -41,4 +99,8 @@ button {
     color: #000;
     text-decoration: none;
     cursor: pointer;
+}
+
+#originalText {
+    user-select: none;
 }
