@@ -99,7 +99,9 @@ function misspelledWords (inputText) {
 //Function to open pop up and display test statistics
 function summary() {
     resetTimer();
-    SUMMARY.querySelector("#statistics").innerHTML = "Misspelled words = " + misspelledWordsCount + " WPM = " + wpm;
+    TEXTAREA.setAttribute("disabled", "true");
+    var result = "Misspelled words = " + misspelledWordsCount + " WPM = " + wpm;
+    SUMMARY.querySelector("#statistics").innerHTML = result;
     SUMMARY.style.display = "block";
 }
 
@@ -138,6 +140,10 @@ function resetDocument (){
     TEXTAREA.value = "";
     TEXTAREA.style.borderColor = "#888";
     CLOCK.innerHTML = Clock.printClock();
+
+    if (TEXTAREA.hasAttribute("disabled")) {
+        TEXTAREA.removeAttribute("disabled");
+    }
 }
 
 CLOSESUMMARY.onclick = function () {
@@ -148,3 +154,8 @@ CLOSESUMMARY.onclick = function () {
 TEXTAREA.addEventListener("keypress", startClock, false);
 TEXTAREA.addEventListener("keyup", callAnalysis, false);
 RESET.addEventListener("click", resetCall, false);
+
+//Disables pasting into text area
+TEXTAREA.addEventListener("paste", function (e) {
+    e.preventDefault()
+}, false);
