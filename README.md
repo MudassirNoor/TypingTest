@@ -1,1 +1,3 @@
-Simple web application to replicate the typing test program.
+# Typing Test
+
+Simple web application to test typing speed and accuracy.
